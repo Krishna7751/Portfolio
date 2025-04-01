@@ -167,16 +167,6 @@ body{
     cursor: pointer;
    }
 
-/* .about-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding: 50px;
-    max-width: 1200px;
-    margin: auto;
-    gap: 50px; 
-    flex-direction: row-reverse;
-} */
 
 .aboutimg {
     flex: 1; /* Image & text take equal space */
