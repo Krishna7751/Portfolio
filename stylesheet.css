@@ -85,6 +85,7 @@ body{
         font-weight: bold;
     }
     
+
 .home-content h1{
     font-size: 56px;
     font-weight: 700;
@@ -146,11 +147,36 @@ body{
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan,0 0 200px cyan
 }
+.button-box{
+    position:absolute;
+    right:250px;
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef
+
+}
+.button-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan,0 0 200px cyan
+
+}
 .about{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 1.5rem;
+   
 }
 .about-img img{
     max-width: 550px;
@@ -167,6 +193,16 @@ body{
     cursor: pointer;
    }
 
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Image left, text right */
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto; /* Center the whole section */
+    gap: 50px; /* Space between image & text */
+    flex-direction: row-reverse;
+}
 
 .aboutimg {
     flex: 1; /* Image & text take equal space */
@@ -185,19 +221,16 @@ body{
     cursor: pointer;
     position: absolute;
     left: 10px;
+    top: 780px;
 }
 
-.about-text {
-    flex: 1; /* Text takes equal space */
-    text-align: left; /* Keeps text on the right */
-}
 
 .about-text h2 {
     font-size: 50px;
     color: white;
     margin-bottom:-155px;
     position: absolute;
-    right:250px;
+    right:440px;
 }
 
 .about-text h2 span {
@@ -212,19 +245,36 @@ body{
     margin-left: 15px 0 30px;
     margin-bottom:-500px;
     position: absolute;
-    right:250px;
+    right:400px;
 }
 
-.about-text p {
+.about-container {
     display: flex;
+    justify-content: flex-end; /* Moves content to the right */
+    padding-right: 10px;
+}
+
+.about-text {
+     max-width: 60%;
+     /* width: 100vh;  */
+}
+
+
+
+.about-text p {
     color: aliceblue;
     font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 2rem;
-    float: right;
-    width: 50%;
+    line-height: 1.5;
+    text-align: left;
+    margin-top:50px;
+    margin-bottom:50px;
+    right: 0px;
     
 }
+
+
+
+
 
 
 
